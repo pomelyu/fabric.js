@@ -252,7 +252,7 @@ var filesToInclude = [
   ifSpecifiedInclude('textbox', 'src/mixins/textbox_behavior.mixin.js'),
   ifSpecifiedInclude('textbox', 'src/mixins/textbox_click_behavior.mixin.js'),
 
-  ifSpecifiedInclude('node', 'src/node.js'),
+  // ifSpecifiedInclude('node', 'src/node.js'),
 
   ifSpecifiedAMDInclude(amdLib)
 ];

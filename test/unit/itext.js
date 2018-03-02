@@ -781,13 +781,14 @@
     canvas.add(iText);
     equal(typeof iText.toSVG, 'function');
     var parser;
-    if (fabric.isLikelyNode) {
-      var XmlDomParser = require('xmldom').DOMParser;
-      parser = new XmlDomParser();
-    }
-    else {
-      parser = new DOMParser();
-    }
+    // if (fabric.isLikelyNode) {
+    //   var XmlDomParser = require('xmldom').DOMParser;
+    //   parser = new XmlDomParser();
+    // }
+    // else {
+    //   parser = new DOMParser();
+    // }
+    parser = new DOMParser();
     var svgString = canvas.toSVG(),
         doc = parser.parseFromString(svgString, 'image/svg+xml'),
         style = doc.getElementsByTagName('style')[0].firstChild.data;

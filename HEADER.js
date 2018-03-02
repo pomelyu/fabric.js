@@ -35,8 +35,9 @@ fabric.isTouchSupported = "ontouchstart" in fabric.document.documentElement;
  * True when in environment that's probably Node.js
  * @type boolean
  */
-fabric.isLikelyNode = typeof Buffer !== 'undefined' &&
-                      typeof window === 'undefined';
+// fabric.isLikelyNode = typeof Buffer !== 'undefined' &&
+//                       typeof window === 'undefined';
+fabric.isLikelyNode = false;
 
 /* _FROM_SVG_START_ */
 /**
