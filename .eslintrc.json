@@ -3,12 +3,12 @@
     "browser": true
   },
   "globals": {
-    "ActiveXObject": true,
+    "ActiveXObject": false,
     "define": true,
     "eventjs": true,
     "exports": true,
     "fabric": true,
-    "G_vmlCanvasManager": true,
+    "G_vmlCanvasManager": false,
     "require": true,
     "Buffer": true,
     "process": true

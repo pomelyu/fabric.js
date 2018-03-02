@@ -518,8 +518,8 @@
     var cObj = new fabric.Object(), canvas = fabric.document.createElement('canvas');
 
     //let excanvas kick in for IE8 and lower
-    if (!canvas.getContext && typeof G_vmlCanvasManager != 'undefined') {
-      G_vmlCanvasManager.initElement(canvas);
+    if (!canvas.getContext && typeof window.G_vmlCanvasManager != 'undefined') {
+      window.G_vmlCanvasManager.initElement(canvas);
     }
 
     var dummyContext = canvas.getContext('2d');
@@ -532,8 +532,8 @@
     var cObj = new fabric.Object(), canvas = fabric.document.createElement('canvas');
 
     //let excanvas kick in for IE8 and lower
-    if (!canvas.getContext && typeof G_vmlCanvasManager != 'undefined') {
-      G_vmlCanvasManager.initElement(canvas);
+    if (!canvas.getContext && typeof window.G_vmlCanvasManager != 'undefined') {
+      window.G_vmlCanvasManager.initElement(canvas);
     }
     var dummyContext = canvas.getContext('2d');
     ok(typeof cObj.drawControls == 'function');

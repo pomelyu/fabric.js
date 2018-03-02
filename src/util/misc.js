@@ -467,7 +467,7 @@
       canvasEl || (canvasEl = fabric.document.createElement('canvas'));
       /* eslint-disable camelcase */
       if (!canvasEl.getContext && typeof G_vmlCanvasManager !== 'undefined') {
-        G_vmlCanvasManager.initElement(canvasEl);
+        window.G_vmlCanvasManager.initElement(canvasEl);
       }
       /* eslint-enable camelcase */
       return canvasEl;

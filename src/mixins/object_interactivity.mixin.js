@@ -2,7 +2,7 @@
 
   var degreesToRadians = fabric.util.degreesToRadians,
       /* eslint-disable camelcase */
-      isVML = function() { return typeof G_vmlCanvasManager !== 'undefined'; };
+      isVML = function() { return typeof window.G_vmlCanvasManager !== 'undefined'; };
       /* eslint-enable camelcase */
   fabric.util.object.extend(fabric.Object.prototype, /** @lends fabric.Object.prototype */ {
 

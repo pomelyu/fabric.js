@@ -941,7 +941,7 @@
 
         var xml = r.responseXML;
         if (xml && !xml.documentElement && fabric.window.ActiveXObject && r.responseText) {
-          xml = new ActiveXObject('Microsoft.XMLDOM');
+          xml = new window.ActiveXObject('Microsoft.XMLDOM');
           xml.async = 'false';
           //IE chokes on DOCTYPE
           xml.loadXML(r.responseText.replace(/<!DOCTYPE[\s\S]*?(\[[\s\S]*\])*?>/i, ''));
@@ -975,7 +975,7 @@
         }
       }
       else if (fabric.window.ActiveXObject) {
-        doc = new ActiveXObject('Microsoft.XMLDOM');
+        doc = new window.ActiveXObject('Microsoft.XMLDOM');
         doc.async = 'false';
         // IE chokes on DOCTYPE
         doc.loadXML(string.replace(/<!DOCTYPE[\s\S]*?(\[[\s\S]*\])*?>/i, ''));
